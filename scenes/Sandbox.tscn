@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3p5nce72etof"]
+
+[ext_resource type="PackedScene" uid="uid://vqoeygfd5xd8" path="res://prefabs/player/Player.tscn" id="1_n4mgf"]
+[ext_resource type="PackedScene" uid="uid://bj2q7aurlk4ou" path="res://prefabs/follow_camera/FollowCamera.tscn" id="2_w2k4y"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_n4mgf"]
+size = Vector2(32, 32)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_n4mgf")]
+move_force = 500.0
+
+[node name="FollowCamera" parent="." node_paths=PackedStringArray("target") instance=ExtResource("2_w2k4y")]
+target = NodePath("../Player")
+
+[node name="Wall" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_n4mgf")

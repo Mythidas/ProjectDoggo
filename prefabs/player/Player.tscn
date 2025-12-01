@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://vqoeygfd5xd8"]
 
-[ext_resource type="Script" uid="uid://yyhwgueb6rdn" path="res://Scripts/PlayerController.gd" id="1_um8lo"]
+[ext_resource type="Script" uid="uid://yyhwgueb6rdn" path="res://prefabs/player/PlayerController.gd" id="1_um8lo"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_x3d5u"]
 size = Vector2(24, 32)

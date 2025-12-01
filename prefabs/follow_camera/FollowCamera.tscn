@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bj2q7aurlk4ou"]
+
+[ext_resource type="Script" uid="uid://cc3q3uwuctrq4" path="res://prefabs/follow_camera/FollowCamera.gd" id="1_4o7ua"]
+
+[node name="FollowCamera" type="Camera2D"]
+script = ExtResource("1_4o7ua")
