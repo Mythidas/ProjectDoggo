@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b185hm1yewxda"]
+
+[ext_resource type="Script" uid="uid://bckjay3fdpvsm" path="res://actors/enemy/Enemy.gd" id="1_w3ph3"]
+[ext_resource type="Texture2D" uid="uid://dg2bcswhak50r" path="res://assets/sprites/Triangle.png" id="2_1fqe1"]
+[ext_resource type="PackedScene" uid="uid://x136841imjpn" path="res://actors/experience/Experience.tscn" id="2_h8hrn"]
+
+[node name="Enemy" type="Area2D"]
+script = ExtResource("1_w3ph3")
+experience = ExtResource("2_h8hrn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -4)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_1fqe1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, -19)
+polygon = PackedVector2Array(0, 0, -15.465, 30.56, 15, 30)

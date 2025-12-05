@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://x136841imjpn"]
+
+[ext_resource type="Script" uid="uid://c0ommb6xfq1in" path="res://actors/experience/Experience.gd" id="1_0h21u"]
+[ext_resource type="Texture2D" uid="uid://0tln0y205f6k" path="res://assets/sprites/Circle.png" id="1_mph3i"]
+
+[node name="Experience" type="Sprite2D"]
+modulate = Color(0.9098039, 1, 0.28235295, 1)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_mph3i")
+script = ExtResource("1_0h21u")

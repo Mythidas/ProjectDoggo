@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://byaaxfbsddkdq"]
+
+[ext_resource type="Script" uid="uid://k0xghwaraj5j" path="res://actors/weapons/DebugWeapon/DebugWeapon.gd" id="1_0op1w"]
+[ext_resource type="PackedScene" uid="uid://343cybjd8j5g" path="res://actors/projectile/Projectile.tscn" id="2_xly7r"]
+
+[node name="DebugWeapon" type="Node2D"]
+script = ExtResource("1_0op1w")
+projectile = ExtResource("2_xly7r")

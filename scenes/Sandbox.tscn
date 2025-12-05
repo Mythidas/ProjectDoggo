@@ -1,18 +1,34 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3p5nce72etof"]
+[gd_scene load_steps=6 format=3 uid="uid://c3p5nce72etof"]
 
-[ext_resource type="PackedScene" uid="uid://vqoeygfd5xd8" path="res://prefabs/player/Player.tscn" id="1_n4mgf"]
-[ext_resource type="PackedScene" uid="uid://bj2q7aurlk4ou" path="res://prefabs/follow_camera/FollowCamera.tscn" id="2_w2k4y"]
+[ext_resource type="Script" uid="uid://c0w850bj7qhc0" path="res://scripts/FollowCamera.gd" id="1_3mq1s"]
+[ext_resource type="PackedScene" uid="uid://dmxxbyk5cvdyv" path="res://actors/player/Player.tscn" id="1_unugr"]
+[ext_resource type="Script" uid="uid://d2t4ej3yjp68q" path="res://scripts/LevelManager.gd" id="1_vn80e"]
+[ext_resource type="PackedScene" uid="uid://b185hm1yewxda" path="res://actors/enemy/Enemy.tscn" id="2_n4mgf"]
+[ext_resource type="PackedScene" uid="uid://x136841imjpn" path="res://actors/experience/Experience.tscn" id="4_vn80e"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_n4mgf"]
-size = Vector2(32, 32)
+[node name="Level" type="Node2D"]
+script = ExtResource("1_vn80e")
+enemy_scene = ExtResource("2_n4mgf")
 
-[node name="Node2D" type="Node2D"]
-
-[node name="Player" parent="." instance=ExtResource("1_n4mgf")]
-move_force = 500.0
-
-[node name="FollowCamera" parent="." node_paths=PackedStringArray("target") instance=ExtResource("2_w2k4y")]
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
+position = Vector2(304, 314)
+script = ExtResource("1_3mq1s")
 target = NodePath("../Player")
 
-[node name="Wall" type="Sprite2D" parent="."]
-texture = SubResource("PlaceholderTexture2D_n4mgf")
+[node name="Player" parent="." instance=ExtResource("1_unugr")]
+position = Vector2(1, 0)
+
+[node name="Experience" parent="." instance=ExtResource("4_vn80e")]
+position = Vector2(99.99999, 0)
+
+[node name="Experience2" parent="." instance=ExtResource("4_vn80e")]
+position = Vector2(30.00003, 85)
+
+[node name="Experience3" parent="." instance=ExtResource("4_vn80e")]
+position = Vector2(99.99999, -68.999985)
+
+[node name="Experience4" parent="." instance=ExtResource("4_vn80e")]
+position = Vector2(-67, 111)
+
+[node name="Experience5" parent="." instance=ExtResource("4_vn80e")]
+position = Vector2(-158, 12.999998)
