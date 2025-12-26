@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PassiveDefinition" load_steps=3 format=3 uid="uid://bl8mnxxukpyyf"]
+
+[ext_resource type="Script" uid="uid://bbqff5ohlowbh" path="res://scripts/PassiveDefinition.gd" id="1_0ykj8"]
+[ext_resource type="Texture2D" uid="uid://b7xgg3xttqsmk" path="res://assets/sprites/Square.png" id="1_i8ies"]
+
+[resource]
+script = ExtResource("1_0ykj8")
+stat = 3
+levels = Array[float]([10.0, 20.0, 30.0, 50.0])
+id = "sniffer"
+evolve_item_link = "shock_collar"
+display_name = "Sniffer"
+icon = ExtResource("1_i8ies")
+item_type = 1
+metadata/_custom_type_script = "uid://bbqff5ohlowbh"

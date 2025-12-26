@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=9 format=3 uid="uid://4t4mdffvv53"]
+
+[ext_resource type="Texture2D" uid="uid://dxmrg5btkfgtl" path="res://icon.svg" id="1_8b5ob"]
+[ext_resource type="Script" uid="uid://de7mi3ompgkq0" path="res://scripts/WeaponStats.gd" id="1_qwxun"]
+[ext_resource type="PackedScene" uid="uid://drmdc7s1rl0hq" path="res://actors/projectile/frisbee/Frisbee.tscn" id="3_3phqq"]
+[ext_resource type="Script" uid="uid://dfrq8e2q15u5j" path="res://scripts/WeaponDefinition.gd" id="3_r14w8"]
+
+[sub_resource type="Resource" id="Resource_8b5ob"]
+script = ExtResource("1_qwxun")
+fire_rate = 0.4
+damage = 100.0
+radius = 30.0
+speed = 5.0
+duration = 10.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_3phqq"]
+script = ExtResource("1_qwxun")
+fire_rate = 0.4
+damage = 125.0
+radius = 35.0
+speed = 5.0
+duration = 10.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_xxgt8"]
+script = ExtResource("1_qwxun")
+fire_rate = 0.5
+damage = 150.0
+radius = 40.0
+speed = 5.0
+duration = 10.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_ic0ib"]
+script = ExtResource("1_qwxun")
+fire_rate = 0.5
+damage = 200.0
+radius = 45.0
+speed = 5.0
+duration = 10.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[resource]
+script = ExtResource("3_r14w8")
+target_mode = 1
+projectile = ExtResource("3_3phqq")
+levels = Array[ExtResource("1_qwxun")]([SubResource("Resource_8b5ob"), SubResource("Resource_3phqq"), SubResource("Resource_xxgt8"), SubResource("Resource_ic0ib")])
+id = "frisbee"
+evolve_item_link = "tags"
+display_name = "Frisbee"
+description = "It's a throwable"
+icon = ExtResource("1_8b5ob")
+metadata/_custom_type_script = "uid://dhccd6jfwae2m"

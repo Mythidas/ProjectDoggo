@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDatabase" load_steps=12 format=3 uid="uid://cq53vm5ixg4t5"]
+
+[ext_resource type="Script" uid="uid://dhccd6jfwae2m" path="res://scripts/ItemDefinition.gd" id="1_2y7i3"]
+[ext_resource type="Resource" uid="uid://dxjd4q4ig7km3" path="res://resources/weapons/PackLeader.tres" id="2_1djen"]
+[ext_resource type="Resource" uid="uid://ctyh3x44jmdcy" path="res://resources/weapons/LeashWhip.tres" id="3_w67u1"]
+[ext_resource type="Resource" uid="uid://4t4mdffvv53" path="res://resources/weapons/Frisbee.tres" id="4_5sfq1"]
+[ext_resource type="Resource" uid="uid://b62rhp5ys6ku3" path="res://resources/weapons/BouncyBall.tres" id="5_ipyfw"]
+[ext_resource type="Resource" uid="uid://c7eurw8v1sgo5" path="res://resources/passives/Treats.tres" id="6_2y7i3"]
+[ext_resource type="Script" uid="uid://c47n68oihdrcx" path="res://scripts/ItemDatabase.gd" id="7_garsa"]
+[ext_resource type="Resource" uid="uid://dxgyv8bypqdro" path="res://resources/passives/Loyalty.tres" id="7_ipyfw"]
+[ext_resource type="Resource" uid="uid://bl8mnxxukpyyf" path="res://resources/passives/Sniffer.tres" id="8_k10k0"]
+[ext_resource type="Resource" uid="uid://b0u4mt08ve0lu" path="res://resources/passives/Tags.tres" id="9_garsa"]
+[ext_resource type="Resource" uid="uid://brqaileue6aip" path="res://resources/passives/Zoomies.tres" id="10_2gk62"]
+
+[resource]
+script = ExtResource("7_garsa")
+items = Array[ExtResource("1_2y7i3")]([ExtResource("2_1djen"), ExtResource("3_w67u1"), ExtResource("4_5sfq1"), ExtResource("5_ipyfw"), ExtResource("6_2y7i3"), ExtResource("7_ipyfw"), ExtResource("8_k10k0"), ExtResource("9_garsa"), ExtResource("6_2y7i3"), ExtResource("10_2gk62")])

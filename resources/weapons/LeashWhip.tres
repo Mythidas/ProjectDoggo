@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=9 format=3 uid="uid://ctyh3x44jmdcy"]
+
+[ext_resource type="Script" uid="uid://de7mi3ompgkq0" path="res://scripts/WeaponStats.gd" id="1_b7qdd"]
+[ext_resource type="Texture2D" uid="uid://dg2bcswhak50r" path="res://assets/sprites/Triangle.png" id="1_chvf8"]
+[ext_resource type="PackedScene" uid="uid://xevs5s3x8tl5" path="res://actors/projectile/leash_whip/LeashWhip.tscn" id="3_chvf8"]
+[ext_resource type="Script" uid="uid://dfrq8e2q15u5j" path="res://scripts/WeaponDefinition.gd" id="3_iyi2q"]
+
+[sub_resource type="Resource" id="Resource_iyi2q"]
+script = ExtResource("1_b7qdd")
+fire_rate = 1.0
+damage = 100.0
+radius = 30.0
+duration = 0.5
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_chvf8"]
+script = ExtResource("1_b7qdd")
+fire_rate = 1.0
+damage = 125.0
+radius = 30.0
+duration = 0.5
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_f17ap"]
+script = ExtResource("1_b7qdd")
+fire_rate = 1.0
+damage = 150.0
+radius = 30.0
+duration = 0.5
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_xtonk"]
+script = ExtResource("1_b7qdd")
+fire_rate = 1.0
+damage = 200.0
+radius = 30.0
+duration = 0.5
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[resource]
+script = ExtResource("3_iyi2q")
+target_mode = 1
+projectile = ExtResource("3_chvf8")
+levels = Array[ExtResource("1_b7qdd")]([SubResource("Resource_iyi2q"), SubResource("Resource_chvf8"), SubResource("Resource_f17ap"), SubResource("Resource_xtonk")])
+id = "leash_whip"
+evolve_item_link = "treats"
+display_name = "Leash Whip"
+description = "It whips"
+icon = ExtResource("1_chvf8")
+metadata/_custom_type_script = "uid://dhccd6jfwae2m"

@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=9 format=3 uid="uid://dxjd4q4ig7km3"]
+
+[ext_resource type="Texture2D" uid="uid://b7xgg3xttqsmk" path="res://assets/sprites/Square.png" id="1_fdywi"]
+[ext_resource type="Script" uid="uid://de7mi3ompgkq0" path="res://scripts/WeaponStats.gd" id="1_vdigy"]
+[ext_resource type="Script" uid="uid://dfrq8e2q15u5j" path="res://scripts/WeaponDefinition.gd" id="3_515un"]
+[ext_resource type="PackedScene" uid="uid://cguru52gvbvjt" path="res://actors/projectile/pack_leader/PackLeader.tscn" id="3_f2sf5"]
+
+[sub_resource type="Resource" id="Resource_fdywi"]
+script = ExtResource("1_vdigy")
+fire_rate = -1.0
+damage = 100.0
+radius = 60.0
+speed = 5.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_f2sf5"]
+script = ExtResource("1_vdigy")
+fire_rate = -1.0
+damage = 125.0
+radius = 75.0
+speed = 5.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_l3xd2"]
+script = ExtResource("1_vdigy")
+fire_rate = -1.0
+damage = 150.0
+radius = 90.0
+speed = 5.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_iq86b"]
+script = ExtResource("1_vdigy")
+fire_rate = -1.0
+damage = 175.0
+radius = 105.0
+speed = 5.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[resource]
+script = ExtResource("3_515un")
+target_mode = 1
+projectile = ExtResource("3_f2sf5")
+levels = Array[ExtResource("1_vdigy")]([SubResource("Resource_fdywi"), SubResource("Resource_f2sf5"), SubResource("Resource_l3xd2"), SubResource("Resource_iq86b")])
+id = "pack_leader"
+evolve_item_link = "loyalty"
+display_name = "Pack Leader"
+description = "It's another dog!"
+icon = ExtResource("1_fdywi")
+metadata/_custom_type_script = "uid://dhccd6jfwae2m"

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://sjcgtdm6wbv4"]
+
+[ext_resource type="Script" uid="uid://qgh0qf5jo876" path="res://actors/projectile/shock_collar/ShockCollar.gd" id="1_73qvt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_73qvt"]
+
+[node name="PShockCollar" type="Area2D"]
+script = ExtResource("1_73qvt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_73qvt")

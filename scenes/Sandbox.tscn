@@ -10,25 +10,23 @@
 script = ExtResource("1_vn80e")
 enemy_scene = ExtResource("2_n4mgf")
 
-[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
-position = Vector2(304, 314)
-script = ExtResource("1_3mq1s")
-target = NodePath("../Player")
-
 [node name="Player" parent="." instance=ExtResource("1_unugr")]
-position = Vector2(1, 0)
 
 [node name="Experience" parent="." instance=ExtResource("4_vn80e")]
-position = Vector2(99.99999, 0)
-
-[node name="Experience2" parent="." instance=ExtResource("4_vn80e")]
-position = Vector2(30.00003, 85)
+position = Vector2(-80.99999, -38.999996)
 
 [node name="Experience3" parent="." instance=ExtResource("4_vn80e")]
-position = Vector2(99.99999, -68.999985)
+position = Vector2(256.99997, -19.999998)
 
 [node name="Experience4" parent="." instance=ExtResource("4_vn80e")]
-position = Vector2(-67, 111)
+position = Vector2(308.99997, 76.99999)
 
 [node name="Experience5" parent="." instance=ExtResource("4_vn80e")]
-position = Vector2(-158, 12.999998)
+position = Vector2(238.99998, 173.99998)
+
+[node name="Experience6" parent="." instance=ExtResource("4_vn80e")]
+position = Vector2(447.99997, 174)
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
+script = ExtResource("1_3mq1s")
+target = NodePath("../Player")

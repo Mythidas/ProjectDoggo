@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=9 format=3 uid="uid://bqonkohhj651x"]
+
+[ext_resource type="Texture2D" uid="uid://bmb4x5fud25mb" path="res://assets/sprites/ShockCollar.png" id="1_4kvwq"]
+[ext_resource type="Script" uid="uid://de7mi3ompgkq0" path="res://scripts/WeaponStats.gd" id="1_m2oul"]
+[ext_resource type="Script" uid="uid://dfrq8e2q15u5j" path="res://scripts/WeaponDefinition.gd" id="2_m2oul"]
+[ext_resource type="PackedScene" uid="uid://sjcgtdm6wbv4" path="res://actors/projectile/shock_collar/ShockCollar.tscn" id="3_hem4e"]
+
+[sub_resource type="Resource" id="Resource_hem4e"]
+script = ExtResource("1_m2oul")
+fire_rate = 0.3
+damage = 100.0
+radius = 60.0
+duration = 0.5
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_pm0nl"]
+script = ExtResource("1_m2oul")
+fire_rate = 0.3
+damage = 125.0
+radius = 70.0
+duration = 0.5
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_1qtx0"]
+script = ExtResource("1_m2oul")
+fire_rate = 0.4
+damage = 150.0
+radius = 80.0
+duration = 0.5
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_4iqm7"]
+script = ExtResource("1_m2oul")
+fire_rate = 0.4
+damage = 175.0
+radius = 90.0
+duration = 0.5
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[resource]
+script = ExtResource("2_m2oul")
+target_mode = 1
+projectile = ExtResource("3_hem4e")
+levels = Array[ExtResource("1_m2oul")]([SubResource("Resource_hem4e"), SubResource("Resource_pm0nl"), SubResource("Resource_1qtx0"), SubResource("Resource_4iqm7")])
+id = "shock_collar"
+evolve_item_link = "sniffer"
+display_name = "Shock Collar"
+icon = ExtResource("1_4kvwq")
+metadata/_custom_type_script = "uid://dfrq8e2q15u5j"

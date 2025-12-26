@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cguru52gvbvjt"]
+
+[ext_resource type="Script" uid="uid://bjwugav50st11" path="res://actors/projectile/pack_leader/PackLeader.gd" id="1_c4hog"]
+[ext_resource type="Texture2D" uid="uid://0tln0y205f6k" path="res://assets/sprites/Circle.png" id="2_5cwui"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mkxd7"]
+
+[node name="PackLeader" type="Area2D"]
+visible = false
+script = ExtResource("1_c4hog")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.3019608, 0.67058825, 0.43137255, 0.47058824)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_5cwui")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.75, 1.75)
+shape = SubResource("CircleShape2D_mkxd7")

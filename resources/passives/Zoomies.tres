@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PassiveDefinition" load_steps=3 format=3 uid="uid://brqaileue6aip"]
+
+[ext_resource type="Texture2D" uid="uid://0tln0y205f6k" path="res://assets/sprites/Circle.png" id="1_cva6m"]
+[ext_resource type="Script" uid="uid://bbqff5ohlowbh" path="res://scripts/PassiveDefinition.gd" id="1_lsu6j"]
+
+[resource]
+script = ExtResource("1_lsu6j")
+stat = 2
+levels = Array[float]([1.0, 2.0, 3.0, 4.0])
+id = "zoomies"
+evolve_item_link = "bouncy_ball"
+display_name = "Zoomies"
+icon = ExtResource("1_cva6m")
+item_type = 1
+metadata/_custom_type_script = "uid://bbqff5ohlowbh"

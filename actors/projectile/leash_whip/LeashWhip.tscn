@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://xevs5s3x8tl5"]
+
+[ext_resource type="Texture2D" uid="uid://0tln0y205f6k" path="res://assets/sprites/Circle.png" id="1_t6b1m"]
+[ext_resource type="Script" uid="uid://b11eeuaqvwxgd" path="res://actors/projectile/leash_whip/LeashWhip.gd" id="2_84g6y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8ohrj"]
+
+[node name="LeashWhip" type="Area2D"]
+script = ExtResource("2_84g6y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8ohrj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.5515329, 0.17310789, 0.5521833, 0.40392157)
+texture = ExtResource("1_t6b1m")

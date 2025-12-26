@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b100vns5ttg6l"]
+
+[ext_resource type="Script" uid="uid://dqqe8fieveea1" path="res://actors/projectile/bouncy_ball/BouncyBall.gd" id="1_33gth"]
+[ext_resource type="Texture2D" uid="uid://0tln0y205f6k" path="res://assets/sprites/Circle.png" id="1_ejn2c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_33gth"]
+
+[node name="BouncyBall" type="Area2D"]
+script = ExtResource("1_33gth")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.91683465, 0.46852654, 0.4534787, 1)
+texture = ExtResource("1_ejn2c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_33gth")

@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="WeaponDefinition" load_steps=9 format=3 uid="uid://b62rhp5ys6ku3"]
+
+[ext_resource type="Texture2D" uid="uid://0tln0y205f6k" path="res://assets/sprites/Circle.png" id="1_3tiom"]
+[ext_resource type="Script" uid="uid://de7mi3ompgkq0" path="res://scripts/WeaponStats.gd" id="1_qn1o3"]
+[ext_resource type="Script" uid="uid://dfrq8e2q15u5j" path="res://scripts/WeaponDefinition.gd" id="3_g2qrv"]
+[ext_resource type="PackedScene" uid="uid://b100vns5ttg6l" path="res://actors/projectile/bouncy_ball/BouncyBall.tscn" id="3_kvrbn"]
+
+[sub_resource type="Resource" id="Resource_3tiom"]
+script = ExtResource("1_qn1o3")
+fire_rate = 0.5
+damage = 70.0
+radius = 10.0
+speed = 5.0
+duration = 10.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_kvrbn"]
+script = ExtResource("1_qn1o3")
+fire_rate = 0.5
+damage = 100.0
+radius = 15.0
+speed = 5.0
+duration = 10.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_qioff"]
+script = ExtResource("1_qn1o3")
+fire_rate = 0.5
+damage = 125.0
+radius = 20.0
+speed = 5.0
+duration = 10.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[sub_resource type="Resource" id="Resource_ds214"]
+script = ExtResource("1_qn1o3")
+fire_rate = 0.5
+damage = 150.0
+radius = 25.0
+speed = 5.0
+duration = 10.0
+metadata/_custom_type_script = "uid://de7mi3ompgkq0"
+
+[resource]
+script = ExtResource("3_g2qrv")
+projectile = ExtResource("3_kvrbn")
+levels = Array[ExtResource("1_qn1o3")]([SubResource("Resource_3tiom"), SubResource("Resource_kvrbn"), SubResource("Resource_qioff"), SubResource("Resource_ds214")])
+id = "bouncy_ball"
+evolve_item_link = "zoomies"
+display_name = "Bouncy Ball"
+description = "It bounces"
+icon = ExtResource("1_3tiom")
+metadata/_custom_type_script = "uid://dhccd6jfwae2m"

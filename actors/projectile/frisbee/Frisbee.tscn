@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://drmdc7s1rl0hq"]
+
+[ext_resource type="Script" uid="uid://t2xojpx8elge" path="res://actors/projectile/frisbee/Frisbee.gd" id="1_oclpj"]
+[ext_resource type="Texture2D" uid="uid://0tln0y205f6k" path="res://assets/sprites/Circle.png" id="2_wc0px"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wc0px"]
+
+[node name="Frisbee" type="Area2D"]
+script = ExtResource("1_oclpj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_wc0px")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.8928245, 0.71124595, 0.22227672, 1)
+texture = ExtResource("2_wc0px")

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PassiveDefinition" load_steps=3 format=3 uid="uid://dxgyv8bypqdro"]
+
+[ext_resource type="Script" uid="uid://bbqff5ohlowbh" path="res://scripts/PassiveDefinition.gd" id="1_qnof3"]
+[ext_resource type="Texture2D" uid="uid://dg2bcswhak50r" path="res://assets/sprites/Triangle.png" id="1_uj4rd"]
+
+[resource]
+script = ExtResource("1_qnof3")
+stat = 4
+levels = Array[float]([1.15, 1.25, 1.35, 1.5])
+id = "loyalty"
+evolve_item_link = "pack_leader"
+display_name = "Loyalty"
+icon = ExtResource("1_uj4rd")
+item_type = 1
+metadata/_custom_type_script = "uid://bbqff5ohlowbh"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PassiveDefinition" load_steps=3 format=3 uid="uid://b0u4mt08ve0lu"]
+
+[ext_resource type="Texture2D" uid="uid://bmb4x5fud25mb" path="res://assets/sprites/ShockCollar.png" id="1_ewj8e"]
+[ext_resource type="Script" uid="uid://bbqff5ohlowbh" path="res://scripts/PassiveDefinition.gd" id="1_pfqs7"]
+
+[resource]
+script = ExtResource("1_pfqs7")
+stat = 1
+levels = Array[float]([10.0, 15.0, 30.0, 45.0])
+id = "tags"
+evolve_item_link = "frisbee"
+display_name = "Dog Tags"
+icon = ExtResource("1_ewj8e")
+item_type = 1
+metadata/_custom_type_script = "uid://bbqff5ohlowbh"

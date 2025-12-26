@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PassiveDefinition" load_steps=3 format=3 uid="uid://c7eurw8v1sgo5"]
+
+[ext_resource type="Texture2D" uid="uid://dxmrg5btkfgtl" path="res://icon.svg" id="1_6dvtg"]
+[ext_resource type="Script" uid="uid://bbqff5ohlowbh" path="res://scripts/PassiveDefinition.gd" id="1_qax3a"]
+
+[resource]
+script = ExtResource("1_qax3a")
+levels = Array[float]([20.0, 40.0, 60.0, 100.0])
+id = "treats"
+evolve_item_link = "leash_whip"
+display_name = "Treats"
+icon = ExtResource("1_6dvtg")
+item_type = 1
+metadata/_custom_type_script = "uid://bbqff5ohlowbh"
